@@ -16,8 +16,8 @@ services:
     ports:
       - 8083:8083
     volumes:
-      - ./instances:/codechat/instances
-      - ./src/env.yml:/codechat/src/env.yml:ro
+      - /volume1/docker/whatsapp_api/codechat/instances:/codechat/instances
+      - /volume1/docker/whatsapp_api/codechat/src/env.yml:/codechat/src/env.yml:ro
     # environment:
     #   - DOCKER_ENV=true
     #   - LOG_LEVEL='ERROR,WARN,DEBUG,INFO,LOG,VERBOSE,DARK'
